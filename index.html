@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prakash | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#1f2933;
+}
+
+/* Header */
+header{
+    background:#0f172a;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-size:36px;
+}
+
+header p{
+    color:#cbd5e1;
+    margin-top:8px;
+}
+
+/* Sections */
+section{
+    padding:40px 8%;
+}
+
+.section-title{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* About */
+.about p{
+    font-size:17px;
+    line-height:1.6;
+}
+
+/* Skills */
+.skills-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+    text-align:center;
+    border-radius:6px;
+}
+
+/* Projects */
+.project{
+    background:white;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.05);
+}
+
+.project h3{
+    margin-bottom:6px;
+}
+
+/* Contact */
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #cbd5e1;
+    border-radius:5px;
+}
+
+.contact button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:#cbd5e1;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prakash</h1>
+    <p>Aspiring Software Developer</p>
+</header>
+
+<section class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        I am an engineering student with a strong interest in programming,
+        problem-solving, and software development. I enjoy learning new
+        technologies and building simple, useful projects.
+    </p>
+</section>
+
+<section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+        <div class="skill">C Programming</div>
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML & CSS</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project">
+        <h3>Attendance Management System</h3>
+        <p>A basic system to record and manage student attendance.</p>
+    </div>
+
+    <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive portfolio website created using HTML and CSS.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button onclick="alert('Message sent!')">Send</button>
+</section>
+
+<footer>
+    © 2025 Prakash. All rights reserved.
+</footer>
+
+</body>
+</html>
